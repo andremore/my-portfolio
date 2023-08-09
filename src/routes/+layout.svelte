@@ -1,59 +1,19 @@
 <script>
-	import Header from './Header.svelte';
+	import Navbar from './Navbar.svelte';
 	import './styles.css';
 </script>
 
-<div class="app">
-	<Header />
-
-	<h1 class="font-bold underline">Hello World!</h1>
+<div class="mx-28">
+	<Navbar />
 
 	<main>
 		<slot />
 	</main>
-
-	<footer>
-		<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-	</footer>
 </div>
 
 <style lang="postcss">
 	:global(html) {
-		background-color: theme(colors.gray.900);
-	}
-
-	.app {
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
-	}
-
-	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
-	}
-
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
+		background-color: #191d26;
+		color: #eafaff;
 	}
 </style>
