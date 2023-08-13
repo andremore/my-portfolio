@@ -1,4 +1,5 @@
 <script>
+	import HeroSection from '$lib/components/HeroSection/HeroSection.svelte';
 </script>
 
 <svelte:head>
@@ -6,7 +7,9 @@
 	<meta name="description" content="André Morgado Portfolio" />
 </svelte:head>
 
-<section />
+<section>
+	<HeroSection />
+</section>
 
 <style>
 </style>
